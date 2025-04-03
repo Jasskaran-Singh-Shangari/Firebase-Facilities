@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import {app} from "../firebase.js" 
 import { useNavigate } from 'react-router-dom'
-import {getAuth, createUserWithEmailAndPassword} from "firebase/auth"
+import {getAuth, createUserWithEmailAndPassword, GoogleAuthProvider} from "firebase/auth"
 const SignUp = () => {
-
+    const provider=new GoogleAuthProvider()
     const [email, setEmail]=useState("")
     const [password, setPassword]=useState("")
     const navigate = useNavigate()
