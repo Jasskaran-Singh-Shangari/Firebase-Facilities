@@ -19,7 +19,9 @@ const SignIn = () => {
         })
     }
   return (
-    <div className="flex">
+    <div>
+        <h1>Sign In</h1>
+        <div className="flex">
         <label htmlFor="email">Email</label>
         <input type="text" id="email" value={email} onChange={(e)=>{
             setEmail(e.target.value)}} />
@@ -27,6 +29,7 @@ const SignIn = () => {
         <input type="text" id="pasword" value={password} onChange={(e)=>{
             setPassword(e.target.value)}} />
         <button className='py-2 px-4' onClick={SignInUser}>Sign In</button>
+    </div>
     </div>
   )
 }

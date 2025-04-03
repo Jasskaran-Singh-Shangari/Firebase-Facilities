@@ -20,7 +20,9 @@ const SignUp = () => {
     }
 
   return (
-    <div className='flex flex-col items-center justify-center gap-4'>
+    <div>
+        <h1>Sign Up </h1>
+        <div className='flex'>
         <div className="flex">
           <label htmlFor="email">Email</label>
           <input type="text" id="email" value={email} onChange={e=>setEmail(e.target.value)} />
@@ -30,6 +32,7 @@ const SignUp = () => {
 
           <button className='px-4 py-3 rounded-xl bg-blue-800 text-white font-medium' onClick={SignUpUser}>Sign Up</button>
         </div>
+    </div>
     </div>
   )
 }
