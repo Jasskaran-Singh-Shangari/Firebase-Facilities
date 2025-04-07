@@ -12,8 +12,14 @@ function App() {
 
   useEffect(()=>{
     onAuthStateChanged(auth, (user)=>{
-      if (user) setUser(user)
-      else setUser(null)
+      if (user){
+        setUser(user)
+        console.log(`Hello ${user}`)
+      } 
+      else{
+        setUser(null)
+        console.log("You are logged out...")
+      }
     })
   }, [])
 
