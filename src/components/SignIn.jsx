@@ -24,6 +24,9 @@ const SignIn = () => {
         .then(()=>{
             console.log("Successfull sign in")
         })
+        .catch((error)=>{
+            console.log(`ERROR: ${error}`)
+        })
 
     }
 
